@@ -4,6 +4,10 @@ import arrow.core.Either
 
 interface LuhnAccountValidator {
     fun getAccountNumberArray(accountNumberString: String) : Either<Exception, List<Int>>
+
+    fun validateIntegerList(accountNumberAsIntList: List<Int>) : Boolean
+
+    fun validate(accountNumberString: String) : Either<Exception, Boolean>
 }
 
 interface AccountNumberValidator {
