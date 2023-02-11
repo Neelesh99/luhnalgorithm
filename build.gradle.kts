@@ -14,6 +14,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testImplementation("io.mockk:mockk:1.13.4")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     implementation("io.arrow-kt:arrow-core:1.1.2")
 }
