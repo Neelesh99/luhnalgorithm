@@ -7,6 +7,6 @@ class ApplicationStartupTest {
 
     @Test
     fun `application will not throw exception on startup with no parameters`(){
-        Assertions.assertDoesNotThrow{ main() }
+        Assertions.assertDoesNotThrow{ main(emptyArray()) }
     }
 }
