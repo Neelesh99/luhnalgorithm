@@ -1,7 +1,10 @@
 package com.neelesh.luhn.calculation
 
-interface LuhnSumCalculator {
+interface AccountNumberValidator {
     fun isValidAccountNumberString(inputAccountNumberString: String) : Boolean
+}
+
+interface LuhnSumCalculator {
 
     fun calculatorLuhnSumFromIntegerList(inputIntegerList: List<Int>) : Long
 
