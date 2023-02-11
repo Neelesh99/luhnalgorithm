@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class LuhnSumCalculatorTest {
 
-    val calculator: LuhnSumCalculator = StandardLuhnSumCalculator
+    private val calculator: LuhnSumCalculator = StandardLuhnSumCalculator
 
     @Test
     fun `when given an account number as string isValidAccountNumberString will return true for valid account number string`(){
@@ -26,5 +26,14 @@ class LuhnSumCalculatorTest {
         val inputAccountNumber = ""
 
         Assertions.assertEquals(false, calculator.isValidAccountNumberString(inputAccountNumber))
+    }
+
+    @Test
+    fun `when given an input integer list calculateLuhnSumFromIntegerList will calculate the luhn sum`(){
+        val inputIntegerArray = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+        val expectedSum: Long = 65
+
+        Assertions.assertEquals(expectedSum, calculator.calculatorLuhnSumFromIntegerList(inputIntegerArray))
     }
 }
