@@ -3,7 +3,7 @@ package com.neelesh.luhn.calculation
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class LuhnSumCalculatorTest {
+class StandardLuhnSumCalculatorTest {
 
     private val calculator: LuhnSumCalculator = StandardLuhnSumCalculator
 
