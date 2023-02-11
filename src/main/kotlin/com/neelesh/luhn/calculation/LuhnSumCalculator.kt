@@ -5,5 +5,6 @@ interface LuhnSumCalculator {
 
     fun calculatorLuhnSumFromIntegerList(inputIntegerList: List<Int>) : Long
 
+    fun calculateValueForElement(digit: Int, index: Int) : Long
 }
 
